@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Github remote -->
+    <remote name="github"
+        fetch="https://github.com/" />
+
+    <remote name="gitlab"
+        fetch="https://gitlab.com/" />
+
+    <remote name="hdp"
+        fetch="https://gitlab.com/holydragonproject"
+        sync-j="16" />
+
+    <!-- general -->
+    <project path="android" name="android" remote="hdp" revision="ndp" />
+
+    <project path="build/make" name="android_build_make" remote="hdp" revision="ndp" >
+        <copyfile src="core/root.mk" dest="Makefile" />
+        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+        <linkfile src="core" dest="build/core" />
+        <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+        <linkfile src="target" dest="build/target" />
+        <linkfile src="tools" dest="build/tools" />
+    </project>
+
+    <project path="build/soong" name="android_build_soong" remote="hdp" revision="ndp" >
+        <linkfile src="root.bp" dest="Android.bp" />
+        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+    </project>
+
+    <project path="bionic" name="android_bionic" remote="hdp" revision="ndp"/>
+
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="hdp" revision="ndp" />
+
+    <!-- external -->
+    <project path="external/tinycompress" name="android_external_tinycompress" remote="hdp" revision="ndp" />
+
+    <!-- system -->
+    <project path="system/bt" name="android_system_bt" remote="hdp" revision="ndp" />
+    <project path="system/core" name="android_system_core" remote="hdp" revision="ndp" />
+    <project path="system/extras" name="android_system_extras" remote="hdp" revision="ndp" />
+
+    <!-- hardware -->
+    <project path="hardware/libhardware" name="android_hardware_libhardware" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/audio-caf-msm8996" name="android_hardware_qcom_audio-caf-msm8996" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/display-caf-msm8996" name="android_hardware_qcom_display-caf-msm8996" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/media-caf-msm8996" name="android_hardware_qcom_media-caf-msm8996" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="hdp" revision="ndp" />
+    <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="hdp" revision="ndp" />
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" remote="hdp" revision="ndp" />
+
+    <!-- frameworks -->
+    <project path="frameworks/av" name="android_frameworks_av" remote="hdp" revision="ndp" />
+    <project path="frameworks/base" name="android_frameworks_base" remote="hdp" revision="ndp" />
+    <project path="frameworks/compile/mclinker" name="android_frameworks_compile_mclinker" remote="hdp" revision="ndp" />
+    <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="hdp" revision="ndp" />
+
+    <!-- packages -->
+    <project path="packages/apps/NitrogenSettings" name="android_packages_apps_NitrogenSettings" remote="hdp" revision="ndp" />
+    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="hdp" revision="ndp" />
+    <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="hdp" revision="ndp" />
+
+    <!-- prebuilts -->
+    <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="hdp" revision="ndp" />
+
+    <!-- services -->
+    <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="hdp" revision="ndp" />
+
+    <!-- vendor -->
+    <project path="vendor/skydragon" name="android_vendor_skydragon" remote="hdp" revision="ndp" />
+    <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="hdp" revision="ndp" />
+    <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="hdp" revision="ndp" />
+    <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="hdp" revision="ndp" />
+    <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="hdp" revision="ndp" />
+
+    <!-- oneplus3 -->
+    <project path="device/oneplus/oneplus3" name="android_device_oneplus_oneplus3" remote="hdp" revision="ndp" />
+    <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="hdp" revision="ndp" />
+    <project path="kernel/oneplus/msm8996" name="android_kernel_oneplus_msm8996" remote="hdp" revision="ndp" />
+
+    <!-- qcom -->
+    <project path="vendor/qcom/sdclang" name="android_vendor_qcom_sdclang" remote="hdp" revision="master" />
+</manifest>
