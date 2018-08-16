@@ -1,5 +1,5 @@
 SkyDragon OS Manifest
-~*~*~*~*~*~*~*~*~*~*~*~
+======================
 
 To initialize your local repository using the SkyDragon trees, use a command like this:
 
@@ -15,5 +15,5 @@ Build commands are:
 
     lunch skydragon_oneplus3-userdebug
 
-    make -j# otapackage
+    time mka otapackage
 
