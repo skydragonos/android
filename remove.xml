@@ -50,15 +50,11 @@
   <!-- External repos -->
   <remove-project name="platform/external/tinycompress" />
 
-  <!-- System repos -->
-  <remove-project name="platform/system/bt" />
-  <remove-project name="platform/system/core" />
-  <remove-project name="platform/system/extras" />
-
   <!-- Framework repos -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/compile/mclinker" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
   <remove-project name="platform/frameworks/opt/telephony" />
 
   <!-- Hardware repos -->
@@ -70,21 +66,33 @@
   <remove-project name="platform/hardware/nxp/nfc" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/qcom/bt" />
+  <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
 
   <!-- Package repos -->
   <remove-project name="platform/packages/apps/Browser2" />
   <remove-project name="platform/packages/apps/DevCamera" />
+  <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/DocumentsUI" />
   <remove-project name="platform/packages/apps/LegacyCamera" />
   <remove-project name="platform/packages/apps/Launcher2" />
   <remove-project name="platform/packages/apps/Protips" />
   <remove-project name="platform/packages/apps/QuickSearchBox" />
+  <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/SpareParts" />
   <remove-project name="platform/packages/apps/Test/connectivity" />
-  <remove-project name="platform/packages/inputmethods/OpenWnn" />
-  <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <remove-project name="platform/packages/inputmethods/OpenWnn" />
+
+  <!-- Provider repos -->
+  <remove-project name="platform/packages/providers/DownloadProvider" />
 
   <!-- Service repos -->
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/services/Telecomm" />
+
+  <!-- System repos -->
+  <remove-project name="platform/system/bt" />
+  <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/extras" />
 
 </manifest>
