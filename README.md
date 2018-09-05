@@ -3,7 +3,7 @@ SkyDragon OS Manifest
 
 To initialize your local repository using the SkyDragon trees, use a command like this:
 
-    repo init -u https://github.com/holydragonproject/android_manifest.git -b ndp
+    repo init -u https://github.com/holydragonproject/android.git -b ndp
 
 Then to sync up:
 
