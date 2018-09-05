@@ -30,6 +30,7 @@
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
 
+    <project path="art" name="android_art" remote="hdp" revision="ndp"/>
     <project path="bionic" name="android_bionic" remote="hdp" revision="ndp"/>
 
     <project path="bootable/recovery" name="android_bootable_recovery" remote="hdp" revision="ndp" />
