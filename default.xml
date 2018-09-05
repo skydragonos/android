@@ -701,6 +701,6 @@
   <!-- Remove unused AOSP repos -->
   <include name="remove.xml" />
 
-  <!-- Add all tracked Nitrogen repos -->
-  <include name="nos.xml" />
+  <!-- Add all tracked SkyDragon repos -->
+  <include name="skydragon.xml" />
 </manifest>

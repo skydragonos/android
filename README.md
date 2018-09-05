@@ -3,7 +3,7 @@ SkyDragon OS Manifest
 
 To initialize your local repository using the SkyDragon trees, use a command like this:
 
-    repo init -u https://github.com/holydragonproject/android.git -b ndp
+    repo init -u https://gitlab.com/holydragonproject/android.git -b ndp
 
 Then to sync up:
 
@@ -15,5 +15,5 @@ Build commands are:
 
     lunch skydragon_oneplus3-userdebug
 
-    time mka otapackage
+    time mka dragon
 
