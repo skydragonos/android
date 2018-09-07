@@ -87,6 +87,7 @@
 
     <!-- vendor -->
     <project path="vendor/skydragon" name="android_vendor_skydragon" remote="hdp" revision="ndp" />
+    <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="hdp" revision="ndp" />
