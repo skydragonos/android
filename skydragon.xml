@@ -84,6 +84,7 @@
     <project path="system/bt" name="android_system_bt" remote="hdp" revision="ndp" />
     <project path="system/core" name="android_system_core" remote="hdp" revision="ndp" />
     <project path="system/extras" name="android_system_extras" remote="hdp" revision="ndp" />
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="hdp" revision="ndp" />
 
     <!-- vendor -->
     <project path="vendor/skydragon" name="android_vendor_skydragon" remote="hdp" revision="ndp" />
@@ -100,4 +101,5 @@
 
     <!-- qcom -->
     <project path="vendor/qcom/sdclang" name="android_vendor_qcom_sdclang" remote="hdp" revision="master" />
+    <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="hdp" revision="ndp" />
 </manifest>
