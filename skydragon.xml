@@ -39,6 +39,8 @@
     <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="hdp" revision="ndp" />
     <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="hdp" revision="ndp" />
     <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="hdp" revision="ndp" />
+    <project path="external/exfat" name="android_external_exfat" remote="hdp" revision="ndp" />
+    <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="hdp" revision="ndp" />
     <project path="external/tinycompress" name="android_external_tinycompress" remote="hdp" revision="ndp" />
 
     <!-- hardware -->
@@ -90,6 +92,7 @@
     <project path="system/core" name="android_system_core" remote="hdp" revision="ndp" />
     <project path="system/extras" name="android_system_extras" remote="hdp" revision="ndp" />
     <project path="system/sepolicy" name="android_system_sepolicy" remote="hdp" revision="ndp" />
+    <project path="system/vold" name="android_system_vold" remote="hdp" revision="ndp" />
 
     <!-- vendor -->
     <project path="vendor/skydragon" name="android_vendor_skydragon" remote="hdp" revision="ndp" />
