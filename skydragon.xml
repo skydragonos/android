@@ -43,6 +43,7 @@
     <project path="external/json-c" name="android_external_json-c" remote="hdp" revision="ndp" />
     <project path="external/libphonenumber" name="android_external_libphonenumber" remote="hdp" revision="ndp" />
     <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="hdp" revision="ndp" />
+    <project path="external/perfetto" name="android_external_perfetto" remote="hdp" revision="ndp" />
     <project path="external/tinycompress" name="android_external_tinycompress" remote="hdp" revision="ndp" />
 
     <!-- hardware -->
