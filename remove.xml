@@ -49,6 +49,7 @@
   <remove-project name="platform/prebuilts/build-tools" />
 
   <!-- External repos -->
+  <remove-project name="platform/external/libphonenumber" />
   <remove-project name="platform/external/perfetto" />
   <remove-project name="platform/external/tinycompress" />
 
