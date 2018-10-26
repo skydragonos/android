@@ -123,6 +123,6 @@
     <project path="kernel/oneplus/msm8996" name="android_kernel_oneplus_msm8996" remote="hdp" revision="ndp" />
 
     <!-- qcom -->
-    <project path="vendor/qcom/dragontc-6.0" name="android_vendor_qcom_dragontc-6.0" remote="hdp" revision="dragontc" />
+    <project path="vendor/qcom/dragontc-7.0" name="android_vendor_qcom_dragontc-7.0" remote="hdp" revision="dragontc" />
     <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="hdp" revision="ndp" />
 </manifest>
