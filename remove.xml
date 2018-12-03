@@ -52,6 +52,7 @@
   <remove-project name="platform/external/libphonenumber" />
   <remove-project name="platform/external/perfetto" />
   <remove-project name="platform/external/sfntly" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
 
   <!-- Framework repos -->
