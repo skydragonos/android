@@ -105,6 +105,7 @@
   <remove-project name="platform/packages/inputmethods/OpenWnn" />
 
   <!-- Provider repos -->
+  <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
 
   <!-- Service repos -->
