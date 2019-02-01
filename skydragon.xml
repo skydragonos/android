@@ -123,7 +123,7 @@
     <!-- vendor -->
     <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="hdp" revision="ndp" />
     <project path="vendor/oneplus" name="android_vendor_oneplus" remote="hdp" revision="ndp" />
-    <project path="vendor/gapps" name="android_vendor_gapps" remote="hdp" revision="master" />
+    <project path="vendor/gapps" name="vendor_gapps" remote="hdp" revision="master" />
     <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/dpm" name="android_vendor_qcom_opensource_dpm" remote="hdp" revision="ndp" />
