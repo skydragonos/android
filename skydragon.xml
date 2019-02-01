@@ -93,7 +93,7 @@
     <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="hdp" revision="ndp" />
     <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="hdp" revision="ndp" />
     <project path="packages/apps/SkyDragonSettings" name="android_packages_apps_SkyDragonSettings" remote="hdp" revision="ndp" />
-    <project path="packages/apps/SnapdragonCamera2" name="android_packages_apps_SnapdragonCamera2" remote="hdp" revision="ndp" />
+    <project path="packages/apps/SnapdragonCamera2" name="android_packages_apps_SnapdragonCamera2" remote="hdp" revision="android-9.0" />
     <project path="packages/apps/Terminal" name="android_packages_apps_Terminal" remote="hdp" revision="ndp" />
 
     <!-- inputmethods -->
