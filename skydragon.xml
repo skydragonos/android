@@ -105,6 +105,9 @@
     <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="hdp" revision="ndp" />
     <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" remote="hdp" revision="ndp" />
 
+    <!-- resources -->
+    <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="hdp" revision="ndp" />
+
     <!-- services -->
     <project path="packages/services/OmniJaws" name="android_packages_services_OmniJaws" remote="hdp" revision="ndp" />
     <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="hdp" revision="ndp" />
