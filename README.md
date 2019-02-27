@@ -1,7 +1,7 @@
 SkyDragon OS Manifest
 ======================
 
-This source is pre-set to build OP3/3T, if you're wanting to build for other devices there are a couple commits you need to change, please see below..
+This source is pre-set to build OP3/3T,5/5T,6/6T, if you're wanting to build for other devices there are a couple commits you need to change, please see below..
 
 
 To initialize your local repository using the SkyDragon trees, use a command like this:
@@ -20,6 +20,14 @@ Build commands are:
 
     time mka dragon
 
+
+Things To Do
+======================
+If building for a device with an SOC other than SD820/SD821(MSM8996)
+In vendor/skydragon/sdclang/vendorsetup.sh 
+you need to change the cpu target from cortex-a57 to your correct big core cpu
+so if building for op6/6t for instance, you should change to cortex-a75
+then re-run '. build/envsetup.sh' before lunching and building for your device
 
 
 For other devices
