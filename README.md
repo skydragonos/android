@@ -6,7 +6,7 @@ This source is pre-set to build OP3/3T,5/5T,6/6T, if you're wanting to build for
 
 To initialize your local repository using the SkyDragon trees, use a command like this:
 
-    repo init -u https://gitlab.com/holydragonproject/android.git -b ndp
+    repo init -u https://github.com/oneplus6t-lz/android_skydragon -b ndp
 
 Then to sync up:
 
