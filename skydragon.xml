@@ -13,7 +13,7 @@
         sync-j="16" />
 
     <remote name="lz"
-        fetch="https://github.com/oneplus6t-lz/android_skydragon"
+        fetch="https://github.com/oneplus6t-lz"
         sync-j="16" />
 
     <!-- general -->
