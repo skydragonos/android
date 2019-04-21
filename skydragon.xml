@@ -12,8 +12,12 @@
         fetch="https://gitlab.com/holydragonproject"
         sync-j="16" />
 
+    <remote name="lz"
+        fetch="https://github.com/oneplus6t-lz/android_skydragon"
+        sync-j="16" />
+
     <!-- general -->
-    <project path="android" name="android" remote="hdp" revision="ndp" />
+    <project path="android" name="android_skydragon" remote="lz" revision="ndp" />
 
     <project path="build/make" name="android_build_make" remote="hdp" revision="ndp" >
         <copyfile src="core/root.mk" dest="Makefile" />
