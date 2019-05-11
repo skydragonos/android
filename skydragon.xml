@@ -135,6 +135,8 @@
 
     <!-- vendor -->
     <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="hdp" revision="ndp" />
+    <project path="vendor/image" name="android_vendor_image" remote="hdp" revision="ndp" />
+    <project path="vendor/interfaces" name="android_vendor_interfaces" remote="hdp" revision="ndp" />
     <project path="vendor/oneplus" name="android_vendor_oneplus" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="hdp" revision="ndp" />
     <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="hdp" revision="ndp" />
