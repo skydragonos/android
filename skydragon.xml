@@ -23,7 +23,7 @@
     <!-- general -->
     <project path="android" name="android_skydragon" remote="lz" revision="ndp" />
 
-    <project path="build/make" name="android_build_make" remote="hdp" revision="ndp" >
+    <project path="build/make" name="android_build_make" remote="lz" revision="ndp" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
