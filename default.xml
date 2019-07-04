@@ -702,4 +702,5 @@
 
   <!-- Add all tracked SkyDragon repos -->
   <include name="skydragon.xml" />
+  <include name="hdo.xml" />
 </manifest>
