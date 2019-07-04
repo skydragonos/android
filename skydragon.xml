@@ -10,9 +10,9 @@
         sync-j="16" />
 
     <!-- general -->
-    <project path="android" name="android_skydragon" remote="lz" revision="ndp" />
+    <project path="android" name="skydragon" remote="lz" revision="ndp" />
 
-    <project path="build/make" name="android_build_make" remote="lz" revision="ndp" >
+    <project path="build/make" name="build_make" remote="lz" revision="ndp" >
         <copyfile src="core/root.mk" dest="Makefile" />
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -23,22 +23,22 @@
     </project>
 
     <!-- frameworks -->
-    <project path="frameworks/av" name="android_frameworks_av" remote="hdp" revision="ndp" />
-    <project path="frameworks/base" name="android_frameworks_base" remote="hdp" revision="ndp" />
-    <project path="frameworks/native" name="android_frameworks_native" remote="lz" revision="ndp" />
+    <project path="frameworks/av" name="frameworks_av" remote="hdp" revision="ndp" />
+    <project path="frameworks/base" name="frameworks_base" remote="hdp" revision="ndp" />
+    <project path="frameworks/native" name="frameworks_native" remote="lz" revision="ndp" />
 
     <!-- hardware -->
-    <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="hdp" revision="ndp" />
+    <project path="hardware/qcom/bootctrl" name="hardware_qcom_bootctrl" remote="hdp" revision="ndp" />
 
     <!-- packages -->
-    <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="hdp" revision="ndp" />
+    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="hdp" revision="ndp" />
 
-    <project path="vendor/oneplus" name="android_vendor_oneplus" remote="hdp" revision="ndp" />
-    <project path="vendor/skydragon" name="android_vendor_skydragon" remote="lz" revision="ndp" />
+    <project path="vendor/oneplus" name="vendor_oneplus" remote="hdp" revision="ndp" />
+    <project path="vendor/skydragon" name="vendor_skydragon" remote="lz" revision="ndp" />
 
     <!-- oneplus6/6t -->
-    <project path="device/oneplus/oneplus6" name="android_device_oneplus_oneplus6" remote="lz" revision="ndp" />
-    <project path="device/oneplus/oneplus6t" name="android_device_oneplus_oneplus6t" remote="hdp" revision="ndp" />
-    <project path="kernel/oneplus/sdm845" name="android_kernel_oneplus_sdm845" remote="hdp" revision="ndp" />
+    <project path="device/oneplus/oneplus6" name="device_oneplus_oneplus6" remote="lz" revision="ndp" />
+    <project path="device/oneplus/oneplus6t" name="device_oneplus_oneplus6t" remote="hdp" revision="ndp" />
+    <project path="kernel/oneplus/sdm845" name="kernel_oneplus_sdm845" remote="hdp" revision="ndp" />
 
 </manifest>
