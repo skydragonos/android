@@ -1,55 +1,42 @@
-Welcome to SlimRoms
-===================
+SkyDragon OS Manifest
+======================
+
+This source is pre-set to build OP3/3T,5/5T,6/6T, if you're wanting to build for other devices there are a couple commits you need to change, please see below..
 
 
-Getting Started
----------------
+To initialize your local repository using the SkyDragon trees, use a command like this:
 
-To get started with Slim10, you'll need to get familiar with
-[Git and Repo](https://source.android.com/source/using-repo.html).
+    repo init -u https://github.com/skydragonos/platform_manifest.git -b ten
 
-To initialize your local repository using the Slim 9.0 trees, use this command:
+Then to sync up:
+
+    repo sync -c -j# --force-sync --no-clone-bundle --no-tags
+
+Build commands are:
+
+    . build/envsetup.sh
+
+    lunch skydragon_oneplus6-userdebug
+
+    time mka dragon
 
 
-	repo init -u git://github.com/SlimRoms/platform_manifest.git -b 10.0
+Things To Do
+======================
+If building for a device with an SOC other than SD820/SD821(MSM8996)
+In vendor/skydragon/sdclang/vendorsetup.sh 
+you need to change the cpu target from cortex-a57 to your correct big core cpu
+so if building for op6/6t for instance, you should change to cortex-a75
+then re-run '. build/envsetup.sh' before lunching and building for your device
 
 
-Then sync up with this command:
+For other devices
+======================
 
-	repo sync
+In build/make revert this commit that hardcodes using a prebuilt kernel image in root of kernel source: 
+https://gitlab.com/HolyDragonProject/android_build_make/commit/92e109ef61a7e7ba874738195f03b925734c8e0f
 
+In your device tree, you will need to make your own commit like this one below, in order for the cpuinfo qs tile to read your soc temperature. 
+Not doing so will stop the rom from building. Note that thermalzone is specific to your soc:
+https://gitlab.com/HolyDragonProject/android_device_oneplus_oneplus3/commit/de6c8b2637dcd360e654616bc2663c52d91a8306
 
-
-Submitting Patches
-------------------
-
-We're open source, and patches are always welcome!
-To do this, you will need an account setup with our gerrit server and a changeid hooks.
-To add changeid hook, use the following commands:
-
-	cd <project>
-	scp -p -P 29418 <username>@review.slimroms.org:hooks/commit-msg .git/hooks/
-
-You can send patches by using these commands:
-
-    cd <project>
-    git add .
-    git commit
-    git push ssh://<username>@review.slimroms.org:29418/SlimRoms/<project> HEAD:refs/for/<branch>
-    OR
-    cd <workspace>
-    repo upload SlimRoms/<project>
-
-This will commit your changes into a single commit.
-Make sure your git has the changeid hooks added.
-If you are going to make extra additions, just repeat steps (Don't repo start again), but instead of
-
-	git commit
-
-use
-
-	git commit --amend
-
-Gerrit will recognize it as a new patchset.
-
-To view the status of your and others patches, visit [SlimRoms Code Review](http://review.slimroms.org)
