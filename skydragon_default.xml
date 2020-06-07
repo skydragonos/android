@@ -8,7 +8,8 @@
            fetch="https://github.com/skydragonos" />
 
   <remote  name="slim"
-           fetch="https://github.com/slimroms" />
+           fetch="https://github.com/slimroms"
+           revision="10.0" />
 
   <default revision="ten"
            remote="hdp"
